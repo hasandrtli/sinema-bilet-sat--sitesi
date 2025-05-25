@@ -1,0 +1,83 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .screen {
+      background: #444;
+      height: 50px;
+      width: 60%;
+      margin: 20px auto;
+      border-radius: 8px;
+      color: white;
+      line-height: 50px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .seat {
+      background-color: #e53935; /* Kırmızı (boş) */
+      height: 40px;
+      width: 40px;
+      margin: 4px;
+      border-radius: 8px 8px 4px 4px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      line-height: 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .seat.selected {
+      background-color: #4caf50; /* Yeşil (seçili) */
+    }
+
+    .seat.sold {
+      background-color: #bdbdbd; /* Gri (satılmış) */
+      cursor: not-allowed;
+    }
+
+    .seat:hover:not(.sold):not(.selected) {
+      background-color: #ef5350;
+    }
+
+    .label {
+      width: 30px;
+      margin-right: 6px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    #buy-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #buy-button {
+      padding: 10px 30px;
+      font-size: 16px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #buy-button:hover {
+      background-color: #2e7d32;
+    }
+
+    #count {
+      font-size: 18px;
+      font-weight: bold;
+    }

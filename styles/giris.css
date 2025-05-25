@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: rgb(190, 190, 190);
+    --black-color: #0e0e0e;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+/*base html codes */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 200vh;
+}
+
+header img {
+    height: 7rem;
+    width: auto;
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+header img:hover {
+    transform: rotate(-10deg);
+}
+
+/* header start*/
+/* .header .logo img{
+    height: 5rem;
+} */
+.header {
+    background-color: rgba(213, 213, 213, 0.95);
+    border: 1px solid #2e2e2e;
+    display: flex;
+    /* width: 90%; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 2rem 3%;
+    border-radius: 30rem;
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+}
+
+.header:hover {
+    box-shadow: 0px 0px 15px 3px rgb(0, 0, 0);
+    transform: scale(1.008);
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 2.2rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+    text-decoration: none;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 2px;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+
+/*header end*/
+
+
+.buttons button a {
+    /* border: 1px solid black; */
+    color: black;
+    text-decoration: none;
+    
+}
+
+.bi {
+    transition: all 0.3s ease;
+}
+
+.bi:hover {
+    transform: scale(1.3);
+}
+
+.konteynir {
+    padding-top: 50px;
+    padding-left: 60px;
+    background: linear-gradient(120deg, rgb(255, 255, 255));
+    margin-top: 100px;
+    width: 750px;
+    padding-bottom: 80px;
+    justify-self: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 30px 1px rgba(0, 0, 0, 0.507);
+    border-radius: 20px;
+    filter: brightness(90%);
+}
+
+.konteynir:hover {
+    filter: brightness(100%);
+}
+
+
+
+ .btn-secondary {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.1);
+}
+
+.form-label {
+    font-size: 20px;
+}
+.form-check{
+    width: 300px;
+    /* margin-left: 80px; */
+}
+.form-check-label {
+    font-size: 16px;
+    padding-left: 10px;
+    text-transform: none;
+}
+
+.form-check-input {
+    padding-left: 10px;
+    border: black 1px solid;
+    width: 15px;
+    height: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-check-input:hover {
+    transform: rotate(360deg);
+}
+
+.form-control {
+    width: 600px;
+    font-size: 16px;
+    height: 35px;
+    /* text-decoration-style: none; */
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    background-color: wheat;
+}
+
+
+form div input {
+    text-transform: none;
+}
+
+#emailHelp {
+    font-size: 16px;
+}
+
+#weather-info {
+    background-image: url(../images/havaback.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: black;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all ease 0.2s;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+
+}
+
+#weather-info:hover {
+    transform: scale(1.01);
+}
+
+.mycontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.kartlik {
+    margin-top: 40px;
+    width: 355px;
+    height: 540px;
+    /* border: #0e0e0e solid 1px; */
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.741);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease;
+    box-shadow: 6px 6px 10px 4px;
+    /* justify-content: center; */
+}
+
+.kartlik .button a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.kartlik img {
+    margin-top: 10px;
+    width: 346px;
+    height: auto;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+.kartlik:hover {
+    filter: brightness(90%);
+    transform: scale(1.005);
+}
+
+.kartlik.expanded {
+    height: 645px;
+    /* Ne kadar büyümesini istersen */
+
+}
+
+.kartlik .metin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kartlik .ancizar-serif-regular {
+    font-family: "Ancizar Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    max-height: 0;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    padding: 0 10px;
+    color: white;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.kartlik.expanded .ancizar-serif-regular {
+    max-height: 150px;
+    /* metnin boyutuna göre arttırabilirsin */
+    opacity: 1;
+    margin-top: 10px;
+}

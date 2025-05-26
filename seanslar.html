@@ -10,9 +10,45 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/seanslar.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="javascript/seanslar.js" defer></script>
 </head>
-<body>
-    
+<body style="height: 170vh;">
+    <header class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo" />
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+        </nav>
+
+        <div class="buttons">
+            <button>
+                <a href="kayit.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        <path fill-rule="evenodd"
+                            d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                    </svg></a>
+            </button>
+            <button>
+                <a href="giris.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                        <path fill-rule="evenodd"
+                            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                    </svg></a>
+            </button>
+            <button>
+                <a href="sepetim.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1" />
+                    </svg></a>
+            </button>
+        </div>
+    </header>
   <div class="container">
     <button class="btn btn-outline-dark" type="button">
         <a href="index.html">
@@ -22,60 +58,52 @@
             </svg>
         </a>
     </button>
+    <hr>
     <h1>Film Seansları</h1>
-
     <div class="film">
-      <img src="images/interstellar.jpg" alt="Interstellar">
+      <img src="images/interstellar.jpg" alt="Interstellar" data-title="Interstellar">
       <div class="seanslar">
-        <a href="koltuksecimi.html" class="seansSec">
-            <button>10:00</button>
-            <button>13:00</button>
-            <button>16:00</button>
-            <button>19:00</button>
-            <button>22:00</button>
-        </a>
+        <button>10:00</button>
+        <button>13:00</button>
+        <button>16:00</button>
+        <button>19:00</button>
+        <button>22:00</button>
       </div>
     </div>
 
     <div class="film">
-      <img src="images/inception.jpg" alt="Inception">
+      <img src="images/inception.jpg" alt="Inception" data-title="Inception">
       <div class="seanslar">
-        <a href="koltuksecimi.html" class="seansSec">
-            <button>10:00</button>
-            <button>13:00</button>
-            <button>16:00</button>
-            <button>19:00</button>
-            <button>22:00</button>
-        </a>
+        <button>10:00</button>
+        <button>13:00</button>
+        <button>16:00</button>
+        <button>19:00</button>
+        <button>22:00</button>
       </div>
     </div>
 
     <div class="film">
-      <img src="images/joker.jpg" alt="Joker">
+      <img src="images/joker.jpg" alt="Joker" data-title="Joker">
       <div class="seanslar">
-        <a href="koltuksecimi.html" class="seansSec">
-            <button>10:00</button>
-            <button>13:00</button>
-            <button>16:00</button>
-            <button>19:00</button>
-            <button>22:00</button>
-        </a>
+        <button>10:00</button>
+        <button>13:00</button>
+        <button>16:00</button>
+        <button>19:00</button>
+        <button>22:00</button>
       </div>
     </div>
 
     <div class="film">
-      <img src="images/dune.jpg" alt="Dune">
+      <img src="images/dune.jpg" alt="Dune" data-title="Dune">
       <div class="seanslar">
-        <a href="koltuksecimi.html" class="seansSec">
-            <button>10:00</button>
-            <button>13:00</button>
-            <button>16:00</button>
-            <button>19:00</button>
-            <button>22:00</button>
-        </a>
+        <button>10:00</button>
+        <button>13:00</button>
+        <button>16:00</button>
+        <button>19:00</button>
+        <button>22:00</button>
       </div>
     </div>
-
   </div>
+  <hr>
 </body>
 </html>

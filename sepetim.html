@@ -13,18 +13,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/sepetim.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/sepetim.js"></script>
 </head>
 
-<body>
-    <header class="header">
+<body style="height:auto">
+    <header class="header" style="height: 50px;">
         <a href="index.html">
-            <img src="images/logo.png" alt="logo" />
+            <img src="images/logo.png" alt="logo" style="width: 40px; height: auto;"/>
         </a>
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
+            <a href="index.html">Anasayfa</a>
         </nav>
 
         <div class="buttons">
@@ -55,7 +55,33 @@
         </div>
     </header>
 
-    
+    <div class="container" style="margin-bottom: 100px;">
+    <h2>Sepetiniz</h2>
+    <div id="cartContainer"></div>
+
+    <!-- Toplam -->
+    <div class="total" id="totalPrice">Toplam: 0₺</div>
+
+    <!-- Ödeme Seçimi -->
+    <div class="payment-method">
+      <label><input type="radio" name="payment" onclick="togglePayment('cash')"> Nakit</label>
+      <label><input type="radio" name="payment" onclick="togglePayment('card')"> Kredi Kartı</label>
+    </div>
+
+    <!-- Nakit -->
+    <div id="cashBox" class="hidden">
+      <button class="btn">Kasaya Git</button>
+    </div>
+
+    <!-- Kredi Kartı -->
+    <div id="cardBox" class="hidden">
+      <input type="text" placeholder="Kart Numarası">
+      <input type="text" placeholder="AA/YY">
+      <input type="text" placeholder="CVV">
+      <button class="btn">Ödeme Yap</button>
+    </div>
+  </div>
+  <hr style="margin-bottom: 50px;">
 
 </body>
 

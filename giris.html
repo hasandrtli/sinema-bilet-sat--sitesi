@@ -14,6 +14,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/giris.css">
+    <script src="javascript/giris.js" defer></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
         </div>
     </header>
 
-    <form class="konteynir">
+    <form class="konteynir" id="loginForm">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -72,6 +73,7 @@
             <label class="form-check-label" for="exampleCheck1">Keep my account open</label>
         </div>
         <button type="submit" class="btn btn-secondary">Submit</button>
+        <p id="error-message" style="color: red; margin-top: 10px;"></p>
     </form>
 </body>
 
